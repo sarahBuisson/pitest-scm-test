@@ -17,9 +17,12 @@ public class EnglishGreeting_FullCoverageOnMaster extends Greeting {
         char firstChar = who.charAt(0);
         String message;
         if (Character.isUpperCase(firstChar)) {
-            message = "Hello, " + who;
+            message = "Hello, ";
         } else {
-            message = "hy, " + who;
+            message = "hy, ";
+        }
+        if(who!=null){
+            message += who;
         }
         return message;
     }
